@@ -34,7 +34,7 @@ byte txData[] = {0x02,0x01,0x00,0x55,0x55,0x55,0x55,0x55};
 unsigned long rxID;
 byte dlc;
 byte rxBuf[8];
-char msgString[128];                        // Array to store serial string
+char msgString[128];                     Set INT to pin 2 (This rarely changes)   */
 
 // CAN Interrupt and Chip Select Pins
 #define CAN0_INT 2                              /* Set INT to pin 2 (This rarely changes)   */
@@ -46,7 +46,7 @@ void setup(){
   Serial.begin(115200);
   while(!Serial);
  
-  // Initialize MCP2515 running at 16MHz with a baudrate of 500kb/s and the masks and filters disabled.
+  // Initialize MCP2515 running at 8MHz with a baudrate of 500kb/s and the masks and filters disabled.
   if(CAN0.begin(MCP_STDEXT, CAN_500KBPS, MCP_8MHZ) == CAN_OK)
     Serial.println("MCP2515 Initialized Successfully!");
   else{
