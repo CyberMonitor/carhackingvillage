@@ -4,7 +4,7 @@
  *  displays all received CAN traffic to the terminal at 115200.
  *
  *  Written By: Cory J. Fowler  April 5th, 2017
- *
+ *  Optimized by: Jay Turla (@shipcode) - changes for Standard 1 and other stuffs
  *  (Disclaimer: Standard IDs are currently UNTESTED against a vehicle)
  *
  */
