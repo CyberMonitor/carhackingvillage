@@ -1,9 +1,9 @@
-/* CAN OBD & UDS Simple PID Request
+/* CAN OBD & UDS Simple PID Request [originally written by: Cory J. Fowler  April 5th, 2017]
  *
- *  Currently requests PID 0x00 at a 1 second interval and
+ *  
  *  displays all received CAN traffic to the terminal at 115200.
- *  Optimized by: Jay Turla (@shipcod3) - changes for Standard 1 and other stuffs
- *  Written By: Cory J. Fowler  April 5th, 2017
+ *  Optimized and revised by: Jay Turla (@shipcod3) - changes for Standard 1 and other stuffs
+ *  
  *
  *  (Disclaimer: Standard IDs are currently UNTESTED against a vehicle)
  *
