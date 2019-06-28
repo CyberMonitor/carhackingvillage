@@ -1,12 +1,12 @@
-/* CAN OBD & UDS Simple PID Request [originally written by: Cory J. Fowler  April 5th, 2017]
+/* CAN OBD & UDS Simple PID Request
+ * Originally Written By: Cory J. Fowler  April 5th, 2017 on the arduino forum
  *
- *  
  *  displays all received CAN traffic to the terminal at 115200.
- *  Optimized and revised by: Jay Turla (@shipcod3) - changes for Standard 1 and other stuffs
+ *
+ *  Optimized and revised by: Jay Turla (@shipcode) - changes for Standard 1 and other stuffs
  *  
- *
  *  (Disclaimer: Standard IDs are currently UNTESTED against a vehicle)
- *
+ *  Shoutz to Ian Tabor (@mintynet) for helping me
  */
 
 #include <mcp_can.h>
@@ -28,7 +28,6 @@
 // CAN TX Variables
 unsigned long prevTx = 0;
 unsigned int invlTx = 1000;
-byte txData[] = {0x02,0x01,0x00,0x55,0x55,0x55,0x55,0x55};
 
 // CAN RX Variables
 unsigned long rxID;
@@ -39,7 +38,7 @@ char msgString[128];                        // Array to store serial string
 // CAN Interrupt and Chip Select Pins
 #define CAN0_INT 2                              /* Set INT to pin 2 (This rarely changes)   */
 MCP_CAN CAN0(10);                                /* Set CS to pin 10 (Old shields use pin 10) */
-
+byte counter = 0;
 
 void setup(){
 
@@ -132,12 +131,14 @@ void loop(){
     Serial.println();
   }
  
-  /* Every 1000ms (One Second) send a request for PID 00           *
-   * This PID responds back with 4 data bytes indicating the PIDs  *
-   * between 0x01 and 0x20 that are supported by the vehicle.      */
   if((millis() - prevTx) >= invlTx){
     prevTx = millis();
+    byte txData[8] = {0x02, counter, counter};
     if(CAN0.sendMsgBuf(FUNCTIONAL_ID, 8, txData) == CAN_OK){
+        counter++;
+        if (counter > 160) {
+        counter = 0;
+        }
       Serial.println("Message Sent Successfully!");
     } else {
       Serial.println("Error Sending Message...");
