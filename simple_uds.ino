@@ -2,9 +2,9 @@
  *
  *  Currently requests PID 0x00 at a 1 second interval and
  *  displays all received CAN traffic to the terminal at 115200.
- *
- *  Written By: Cory J. Fowler  April 5th, 2017
  *  Optimized by: Jay Turla (@shipcode) - changes for Standard 1 and other stuffs
+ *  Written By: Cory J. Fowler  April 5th, 2017
+ *
  *  (Disclaimer: Standard IDs are currently UNTESTED against a vehicle)
  *
  */
@@ -34,7 +34,7 @@ byte txData[] = {0x02,0x01,0x00,0x55,0x55,0x55,0x55,0x55};
 unsigned long rxID;
 byte dlc;
 byte rxBuf[8];
-char msgString[128];                     
+char msgString[128];                        // Array to store serial string
 
 // CAN Interrupt and Chip Select Pins
 #define CAN0_INT 2                              /* Set INT to pin 2 (This rarely changes)   */
