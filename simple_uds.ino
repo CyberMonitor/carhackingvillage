@@ -34,7 +34,7 @@ byte txData[] = {0x02,0x01,0x00,0x55,0x55,0x55,0x55,0x55};
 unsigned long rxID;
 byte dlc;
 byte rxBuf[8];
-char msgString[128];                     Set INT to pin 2 (This rarely changes)   */
+char msgString[128];                     
 
 // CAN Interrupt and Chip Select Pins
 #define CAN0_INT 2                              /* Set INT to pin 2 (This rarely changes)   */
