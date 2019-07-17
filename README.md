@@ -1,7 +1,5 @@
 # carhackingvillage
-
 ![alt text](https://github.com/ROOTCONLabs/carhackingvillage/blob/master/images/Car%20Hacking%20Village.png)
-
 ROOTCON is growing bigger, becoming more mature and better every year and has proved to be an organized chaos since its inception. This year semprix and I (shipcode) finally decided to start our very own Car Hacking Village. It's time to unleash the beast that was trapped in the abyss. 
 
 Automotive Security and Car Hacking have been the focus for like 4 years now if I am not mistaken. More talks and research are geared towards it because it is the trend and we owe it to the Car Hacking Village and of course to Charlie Miller and Chris Valasek. They are our inspiration to promote security awareness that cars are hackable too. Cars have computers and technologies that hackers can tap into: wireless, key fobs, CAN Bus, telematics, electronic controllers, ECUs, secure gateways and the infotainment systems. 
