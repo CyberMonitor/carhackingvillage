@@ -49,7 +49,13 @@ void setup(){
 
   pinMode(CAN0_INT, INPUT);                          // Configuring pin for /INT input
  
-  Serial.println("RPM PoC Fuzzer for n00bz");
+  Serial.println(" ####################################################################");
+  Serial.println(" # Peugeot 207 Instrument Cluster that allows you to go vroom vroom #");
+  Serial.println(" # RPM PoC Fuzzer for n00bz                                         #");
+  Serial.println(" # author: @shipcod3                                                #"); 
+  Serial.println(" # ROOTCON Car Hacking Village                                      #");
+  Serial.println(" # greetz to semrpix, mogul, and eman0n for the support             #");
+  Serial.println(" ####################################################################");
 }
 
 void loop(){
