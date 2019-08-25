@@ -2,7 +2,7 @@
  * Originally Written By: Cory J. Fowler  April 5th, 2017 on the arduino forum
  *
  *  - displays all received CAN traffic to the terminal at 115200.
- *  - for ECU sims, it displays all UDS request sent and then from ECUSim Config you can see the UDS request and reply
+ *  - for ECU sims, it displays all UDS request sent and then from the ECUSim Config you can see the UDS request and reply
  *  Optimized and revised by: Jay Turla (@shipcode) - changes for Standard 1 and other stuffs
  *  
  *  (Disclaimer: Standard IDs are currently UNTESTED against a vehicle)
