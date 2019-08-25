@@ -3,7 +3,7 @@
 // # RPM PoC Fuzzer for n00bz                                         #
 // # author: @shipcod3                                                # 
 // # ROOTCON Car Hacking Village                                      #
-// # greetz to semrpix, mogul, and eman0n for the support             #
+// # greetz to semrpix, mogul, mintynet and eman0n for the support    #
 // ####################################################################
 
 #include <mcp_can.h>
@@ -54,7 +54,7 @@ void setup(){
   Serial.println(" # RPM PoC Fuzzer for n00bz                                         #");
   Serial.println(" # author: @shipcod3                                                #"); 
   Serial.println(" # ROOTCON Car Hacking Village                                      #");
-  Serial.println(" # greetz to semrpix, mogul, and eman0n for the support             #");
+  Serial.println(" # greetz to semrpix, mogul, mintynet and eman0n for the support    #");
   Serial.println(" ####################################################################");
 }
 
