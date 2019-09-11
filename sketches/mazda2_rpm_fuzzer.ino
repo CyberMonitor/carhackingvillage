@@ -5,6 +5,7 @@
 // # ROOTCON Car Hacking Village                                      #
 // # greetz to semrpix, mogul, mintynet and eman0n for the support    #
 // ####################################################################
+// special love to @carhackingvillage and carfucar
 
 #include <mcp_can.h>
 #include <SPI.h>
