@@ -1,4 +1,5 @@
 #!/bin/bash
+# This script setups your Virtual CAN Device
 
 echo Firing up Virtual Can!
 sudo modprobe can
