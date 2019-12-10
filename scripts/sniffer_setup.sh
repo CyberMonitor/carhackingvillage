@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script enables SocketCAN with CANtact
+# This script enables SocketCAN with CANtact and STM32 cansniffers (or other USB CAN-based sniffers)
 
 sudo modprobe can
 sudo modprobe vcan
